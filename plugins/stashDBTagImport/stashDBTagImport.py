@@ -33,7 +33,7 @@ def create_tags_from_json(json_file, graphql_url):
         else:
             log.warning(f"Failed to create tag '{tag}'. Error: {response.text}")
 
-    log.info(f"Tag creation process completed. Total tags imported: {total_tags}.")
+    log.info(f"Tag creation process completed. Total tags imported: {total_tags}, Tags created: {created_count}.")
 
 if __name__ == "__main__":
     json_file = "stashDB_tags.json"  # Change this to your JSON file name
